@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HabitFlow - Habit Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div>
+            <h1>HabitFlow</h1>
+
+            <p>Build better habits, one day at a time.</p>
+        </div>
+
+        <div class="date-card">
+            <span id="todayDate"></span>
+        </div>
+
+    </div>
+
+
+    <!-- Streak -->
+
+    <div class="streak-card">
+
+        <div>
+            <p>Current Streak</p>
+
+            <h3 id="streakCount">
+                🔥 0 Day
+            </h3>
+        </div>
+
+        <div class="streak-icon">
+            🔥
+        </div>
+
+    </div>
+
+
+    <!-- Today's Habits -->
+
+    <h2>Today's Habits</h2>
+
+
+    <!-- Progress -->
+
+    <div class="progress-card">
+
+        <p>Today's Progress</p>
+
+        <h3 id="progressText">
+            0%
+        </h3>
+
+        <div class="progress-bar">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Add Habit -->
+
+    <button id="addHabitBtn">
+        + Add Habit
+    </button>
+
+
+    <!-- Habit Form -->
+
+    <div id="habitForm" class="habit-form">
+
+        <input
+            type="text"
+            id="habitInput"
+            placeholder="Enter a new habit"
+        >
+
+        <button id="saveHabitBtn">
+            Add
+        </button>
+
+    </div>
+
+
+    <!-- Habit List -->
+
+    <div id="habitList">
+
+        <div class="habit-card">
+
+            <p>💧 Drink Water</p>
+
+            <div>
+
+                <button class="complete-btn">
+                    Complete
+                </button>
+
+                <button class="delete-btn">
+                    Delete
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="habit-card">
+
+            <p>📚 Study</p>
+
+            <div>
+
+                <button class="complete-btn">
+                    Complete
+                </button>
+
+                <button class="delete-btn">
+                    Delete
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="habit-card">
+
+            <p>🏃 Exercise</p>
+
+            <div>
+
+                <button class="complete-btn">
+                    Complete
+                </button>
+
+                <button class="delete-btn">
+                    Delete
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
